@@ -6,10 +6,16 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./small-card.component.css']
 })
 export class SmallCardComponent implements OnInit {
+
   @Input()
   smallCardCover:string ='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1GL8Mz5XG-_9NZ77L0xQzDdiYIBqXgfOUM4pJUnKWww&s';
+
   @Input()
   smallCardTitle:string ='fsafsdf sjdiofaihfs fhasfhasio';
+
+  @Input()
+  Id:string = '0';
+
   constructor() { }
 
   ngOnInit(): void {
